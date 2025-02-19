@@ -1,0 +1,620 @@
+.sld_order_detail {
+    width: 1200px;
+    margin: 0 auto;
+
+    .container {
+        width: 100%;
+        border: 1px solid #d9d9e4;
+        background-color: white;
+
+        .top_info {
+            height: 185px;
+            &.point_order {
+                border-bottom: 1px solid #d9d9e4;
+            }
+
+            .top_info_state {
+                width: 348px;
+                text-align: center;
+                height: 100%;
+                position: relative;
+                border-right: 1px solid #d9d9e4;
+
+                .state {
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-weight: 600;
+                    color: var(--color_vice);
+                }
+
+                .refuse_reason {
+                    padding-top: 25px;
+                    color: #666666;
+                }
+
+                .oprate_btn {
+                    display: inline-block;
+                    height: 27px;
+                    line-height: 25px;
+                    padding: 0 12px;
+                    color: var(--color_vice);
+                    margin: 15px auto 0;
+                    border: 1px solid var(--color_vice);
+                    -webkit-border-radius: 2px;
+                    -moz-border-radius: 2px;
+                    border-radius: 2px;
+                }
+
+                .cancel {
+                    position: absolute;
+                    bottom: 15px;
+
+                    span {
+                        display: inline-block;
+                        padding: 0 10px;
+                    }
+
+                    span:nth-child(2) {
+                        border-left: 1px solid #bbbbbb;
+                    }
+
+                    span:hover {
+                        color: var(--color_vice);
+                    }
+                }
+            }
+        }
+
+        .logistics_info {
+            height: 185px;
+            border-top: 1px solid #d9d9e4;
+
+            .logistics_info_left {
+                height: 100%;
+                width: 348px;
+                border-right: 1px solid #d9d9e4;
+
+                .logistics_info_left_box {
+                    width: 100%;
+                    padding: 0 20px;
+                }
+
+                .image {
+                    width: 90px;
+                    height: 90px;
+                    overflow: hidden;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+
+                .info {
+                    margin-left: 18px;
+
+                    p {
+                        line-height: 20px;
+                        width: 196px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .logistics_info_right {
+                width: 850px;
+
+                ::-webkit-scrollbar {
+                    width: 0 !important;
+                }
+
+                ::-webkit-scrollbar {
+                    width: 0 !important;
+                    height: 0;
+                }
+
+                .right_container {
+                    width: 95%;
+                    height: 150px;
+                    margin: 0 auto;
+                    overflow-y: scroll;
+
+                    img {
+                        width: 140px;
+                        display: block;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        color: #1c1c1c;
+                        font-size: 16px;
+                        margin-top: 15px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .order_info,
+        .shop_info {
+            border-top: 1px solid #d9d9e4;
+            padding: 24px 45px 0 45px;
+            width: 100%;
+
+            p {
+                color: #1c1c1c;
+                font-size: 16px;
+                line-height: 35px;
+                font-weight: 600;
+            }
+
+            .order_info_item {
+                div {
+                    line-height: 30px;
+                    color: #333333;
+                    width: 50%;
+                    span {
+                        color: #888;
+                    }
+                }
+            }
+        }
+
+        .order_mark {
+            padding: 24px 45px 0 45px;
+            width: 100%;
+            margin-bottom: 20px;
+
+            p {
+                color: #1c1c1c;
+                font-size: 16px;
+                line-height: 35px;
+                font-weight: 600;
+            }
+
+            .order_mark_item {
+                width: 100%;
+                line-height: 30px;
+                color: #999999;
+
+                span {
+                    color: #999999;
+                }
+            }
+        }
+
+        .shop_info {
+            width: 100%;
+            // margin-top: 40px;
+            border-top: none;
+
+            .store_name {
+                margin: 20px 0;
+                font-size: 14px;
+                cursor: pointer;
+                .iconziyuan11 {
+                    font-size: 11px;
+                    margin-top: 3px;
+                    margin-left: 3px;
+                }
+                &:hover {
+                    color: var(--color_main);
+                }
+            }
+        }
+
+        .settle_info {
+            border-top: 1px solid #d9d9e4;
+            text-align: right;
+            padding: 15px 66px 15px 0;
+            color: #666;
+            line-height: 30px;
+
+            p {
+                span {
+                    display: inline-block;
+                    width: 162px;
+                    color: #333;
+                }
+            }
+
+            .total {
+                color: #010101;
+                margin-top: 6px;
+
+                span {
+                    color: var(--color_price);
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .sld_deliver_title {
+            line-height: 35px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 16px 45px 0px 45px;
+        }
+        .sld_order_nav {
+            margin-left: 45px;
+            margin-right: 45px;
+            margin-bottom: 25px;
+            padding-top: 5px;
+            border-bottom: 1px solid $colorI;
+            .sld_order_nav_con {
+                .item {
+                    height: 36px;
+                    text-align: center;
+                    line-height: 36px;
+                    border-bottom: 0;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    font-size: 14px;
+                    cursor: pointer;
+                    &:not(:first-child) {
+                        border-left: none;
+                    }
+                    &:hover {
+                        color: $colorMain;
+                    }
+                }
+                .active {
+                    position: relative;
+                    color: $colorMain;
+                    font-weight: 600;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: -1px;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $colorMain;
+                    }
+                }
+            }
+        }
+
+        .logistics_info_name {
+            width: 100%;
+            font-size: 14px;
+            border-top: 1px solid $colorI;
+            border-bottom: 1px solid $colorI;
+            padding: 20px;
+            background: #f8f8f8;
+            p:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            p {
+                span:first-child {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #888888;
+                }
+
+                span:last-child {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #1c1c1c;
+                }
+            }
+        }
+
+        .sld_deliver_box {
+            width: 100%;
+            padding-left: 45px;
+            padding-right: 45px;
+            .section3 {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: #efeff3;
+                padding-left: 20px;
+                padding-right: 20px;
+                span {
+                    display: block;
+                    height: 14px;
+                    line-height: 14px;
+                    font-size: 12px;
+                    font-family: SourceHanSansCN-Medium;
+                    white-space: nowrap;
+                    overflow-wrap: break-word;
+                    flex-shrink: 0;
+                }
+                .word1 {
+                    margin-left: 288px;
+                }
+                .word2 {
+                    margin-left: 215px;
+                }
+                .word3 {
+                    margin-left: 197px;
+                }
+                .word4 {
+                    margin-left: 198px;
+                }
+            }
+            .section4 {
+                border-top: 1px solid $colorI;
+                .mod6 {
+                    border: none;
+                }
+                .mod8 {
+                    width: 340px;
+                    margin-left: 20px;
+                    .infoBox1 {
+                        width: 340px;
+                    }
+                    .word42 {
+                        width: 340px;
+                    }
+                }
+                .mod9 {
+                    width: 150px;
+                    margin-left: 30px;
+                    .word43 {
+                        width: 150px;
+                    }
+                }
+                .word5 {
+                    width: 174px;
+                    text-align: center;
+                    margin-left: 20px;
+                }
+                .word6 {
+                    width: 174px;
+                    text-align: center;
+                    margin-left: 49px;
+                }
+                .word7 {
+                    width: 170px;
+                    text-align: center;
+                    margin-left: 47px;
+                }
+            }
+
+            .logistics_list_con {
+                width: 98%;
+                padding-left: 1px;
+                padding-top: 20px;
+                margin-left: 2%;
+            }
+            .sld_common_empty {
+                height: 300px !important;
+                padding-top: 80px !important;
+            }
+        }
+        .section4 {
+            background-color: #ffffff;
+            justify-content: center;
+            align-items: flex-start;
+            .mod6 {
+                display: flex;
+                align-items: center;
+                height: 110px;
+                border: 1px solid #efeff3;
+                .word41 {
+                    width: 36px;
+                    height: 12px;
+                    display: block;
+                    overflow-wrap: break-word;
+                    color: $colorF;
+                    font-size: 12px;
+                    font-family: SourceHanSansCN-Regular;
+                    white-space: nowrap;
+                    line-height: 12px;
+                    text-align: right;
+                }
+                .mod7 {
+                    position: relative;
+                    width: 64px;
+                    height: 64px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    .section5 {
+                        width: 64px;
+                        height: 64px;
+                        flex-shrink: 0;
+                    }
+                }
+                .mod8 {
+                    width: 400px;
+                    min-height: 64px;
+                    margin-left: 10px;
+                    .infoBox1 {
+                        width: 100%;
+                        height: 38px;
+                        line-height: 19px;
+                        color: $colorF;
+                        font-size: 12px;
+                        font-family: SourceHanSansCN-Bold;
+                        text-align: left;
+                        overflow-wrap: break-word;
+                        cursor: pointer;
+                        &:hover {
+                            color: $colorMain;
+                        }
+                    }
+                    .word42 {
+                        width: 100%;
+                        line-height: 19px;
+                        color: $colorF;
+                        font-size: 12px;
+                        font-family: SourceHanSansCN-Regular;
+                        text-align: left;
+                        align-self: flex-start;
+                        overflow-wrap: break-word;
+                        cursor: pointer;
+                        &:hover {
+                            color: $colorMain;
+                        }
+                    }
+                }
+                .mod9 {
+                    width: 138px;
+                    margin-left: 26px;
+                    .word43 {
+                        display: block;
+                        width: 138px;
+                        line-height: 18px;
+                        overflow-wrap: break-word;
+                        color: $colorF;
+                        font-size: 12px;
+                        font-family: SourceHanSansCN-Regular;
+                        white-space: nowrap;
+                    }
+                }
+                .mod10 {
+                    width: 124px;
+                    margin-left: 10px;
+                    .info12 {
+                        display: block;
+                        width: 124px;
+                        line-height: 14px;
+                        margin-top: 2px;
+                        margin-bottom: 2px;
+                        color: $colorF;
+                        font-size: 12px;
+                        font-family: SourceHanSansCN-Regular;
+                        word-break: break-all;
+                        text-align: center;
+                    }
+                }
+                .word45 {
+                    width: 74px;
+                    display: block;
+                    color: $colorF;
+                    font-size: 12px;
+                    font-family: SourceHanSansCN-Regular;
+                    line-height: 12px;
+                    text-align: center;
+                    word-break: break-all;
+                    margin-left: 20px;
+                }
+                .txt22 {
+                    width: 54px;
+                    margin-left: 20px;
+                }
+                .txt23 {
+                    width: 64px;
+                    margin-left: 26px;
+                }
+                .info14 {
+                    width: 82px;
+                    margin-left: 30px;
+                }
+                .info15 {
+                    width: 68px;
+                    height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-left: 25px;
+                    div {
+                        cursor: pointer;
+                        &:hover {
+                            color: $colorMain;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cancel_list_con,
+    .logistics_list_con {
+        width: 520px;
+        margin: 0 auto;
+        height: 300px;
+        overflow-y: scroll;
+
+        .reason_item {
+            padding: 0 30px;
+            height: 40px;
+            width: 100%;
+            margin-bottom: 15px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+
+            &.active {
+                background: #f8f8f8;
+            }
+        }
+    }
+
+    .confirm_cancel_btn {
+        width: 80px;
+        height: 30px;
+        background: var(--color_vice);
+        border-radius: 3px;
+        line-height: 30px;
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .logistics_info {
+        width: 100%;
+        height: 86px;
+        background: #f8f8f8;
+        font-size: 14px;
+    }
+}
+
+.select_reason_width {
+    width: 560px !important;
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0;
+    }
+}
+
+.select_address_width {
+    width: 500px !important;
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0;
+    }
+}
+
+.el-dialog__body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.logistics_list_con::-webkit-scrollbar {
+    /*滚动条里面轨道*/
+    width: 12px;
+    background-color: rgba(230, 230, 230, 0.5);
+}
+.logistics_list_con::-webkit-scrollbar-thumb {
+    background-color: rgba(180, 180, 180, 0.5);
+    border-radius: 5px;
+}

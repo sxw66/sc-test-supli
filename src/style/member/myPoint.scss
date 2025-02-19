@@ -1,0 +1,99 @@
+.clearfix {
+    zoom: 1;
+    display: block;
+}
+.colr {
+    color: green;
+    padding-right: 2px;
+}
+.colr1 {
+    color: #e2231a;
+    padding-right: 2px;
+}
+
+.current {
+    font-weight: bold;
+    color: var(--color_main) !important;
+}
+.sld_myPoint_wrapper {
+    float: left;
+    .pointCon {
+        background-color: #fff;
+        border: 1px solid #eeeeee;
+        width: 1008px;
+        // height: 900px;
+        box-sizing: border-box;
+        margin-left: 20px;
+        .jifen_top {
+            height: 77px;
+            line-height: 77px;
+            padding: 0 20px;
+            border-bottom: 1px solid #eeeeee;
+            .itg {
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+        .content_tit {
+            width: 100%;
+            padding-right: 10px;
+            .tabsTitle {
+                display: flex;
+                height: 42px;
+                line-height: 42px;
+                padding: 0 18px;
+                li {
+                    position: relative;
+                    font-size: 14px;
+                    color: #333333;
+                    padding: 0 20px;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: 50%;
+                        right: 0;
+                        width: 1px;
+                        height: 13px;
+                        background-color: #8d8d8d;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+        .point_list {
+            min-height: 315px;
+            .point_table {
+                border-left: none;
+                border-right: none;
+                width: 100%;
+                margin-bottom: 30px;
+                border: 1px solid #e0e0e0;
+                border-collapse: collapse;
+                border-spacing: 0;
+                background-color: transparent;
+                .voucher_tabeltitle {
+                    height: 39px;
+                    background-color: #ececec;
+                    th {
+                        text-align: center;
+                        font-weight: 400;
+                        border: 1px solid #e3e3e3;
+                    }
+                }
+                td:first-child {
+                    border-left: none;
+                }
+                td {
+                    text-align: center;
+                    line-height: 50px;
+                    background: #fff;
+                    border: 1px solid #e3e3e3;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

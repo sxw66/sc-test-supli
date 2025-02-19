@@ -1,0 +1,203 @@
+.sld_refund_detail {
+    margin: 20px 0 0 20px;
+    width: 1010px;
+    float: left;
+    .refund_detail_top {
+        width: 100%;
+        height: 210px;
+        border: 1px solid #eeeeee;
+        background-color: #fff;
+        margin-bottom: 20px;
+        .refund_detail_status {
+            width: 323px;
+            height: 210px;
+            border-right: 1px solid #eeeeee;
+            .detail_ordersn {
+                color: #999999;
+                font-size: 12px;
+                padding: 26px 0 0 32px;
+            }
+            .detail_top_status {
+                color: #7abd54;
+                font-size: 22px;
+                text-align: center;
+                margin-top: 65px;
+            }
+            .status_option {
+                color: #7abd54;
+                font-size: 13px;
+                text-align: center;
+                margin-top: 10px;
+                span {
+                    display: inline-block;
+                    height: 27px;
+                    line-height: 25px;
+                    padding: 0 12px;
+                    color: #7abd54;
+                    margin: 10px auto 0;
+                    border: 1px solid #7abd54;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .refund_speed {
+            width: 682px;
+            height: 210px;
+            .refund_speed_des {
+                color: #999999;
+                font-size: 12px;
+                padding: 26px 0 0 32px;
+            }
+            .refund_speed_con {
+                padding: 30px 40px 0 40px;
+                position: relative;
+                .refund_speed_pre {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    span {
+                        font-size: 14px;
+                        margin-top: 40px;
+                        color: #7abd54;
+                    }
+                    .refund_noactive {
+                        color: #999999;
+                    }
+                }
+                .refund_speed_line {
+                    width: 153px;
+                    height: 18px;
+                    margin: 10px;
+                    img {
+                        width: 153px;
+                        height: 18px;
+                    }
+                }
+                .refund_success_fail {
+                    position: absolute;
+                    right: 10px;
+                    top: -20px;
+                    z-index: 10;
+                    img {
+                        width: 130px;
+                        height: 110px;
+                    }
+                }
+            }
+        }
+    }
+    .refund_journal {
+        min-height: 769px;
+        background-color: #fff;
+        border: 1px solid #eeeeee;
+        margin-bottom: 30px;
+        padding-top: 48px;
+        .refund_goods {
+            width: 323px;
+            min-height: 769px;
+            border-right: 1px solid #eeeeee;
+            .refund_goods_img {
+                width: 120px;
+                height: 120px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 15px;
+            }
+            .refund_goods_name {
+                width: 255px;
+                line-height: 21px;
+                color: #333333;
+                font-size: 14px;
+                word-break: break-all;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-align: center;
+            }
+            .refund_goods_specvalue {
+                line-height: 21px;
+                color: #333333;
+                font-size: 14px;
+            }
+            .refund_goods_price {
+                color: var(--color_price);
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+        .refund_journal_con {
+            .refund_journal_pre {
+                margin-bottom: 20px;
+                .journal_left {
+                    padding-left: 76px;
+                    span:nth-child(1) {
+                        width: 11px;
+                        height: 11px;
+                        border-radius: 50%;
+                        background-color: #7abd54;
+                        display: block;
+                    }
+                    span:nth-child(2) {
+                        width: 1px;
+                        background-color: #7abd54;
+                        display: block;
+                        min-height: 50px;
+                        margin-top: 10px;
+                    }
+                    .active {
+                        height: 160px;
+                    }
+                }
+                .journal_right {
+                    margin-left: 76px;
+                    border-bottom: 1px dashed #999999;
+                    padding-bottom: 15px;
+                    .journal_des {
+                        color: #333333;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    .journal_time {
+                        width: 500px;
+                        color: #666666;
+                        font-size: 14px;
+                        line-height: 21px;
+                        margin-top: 10px;
+                        word-break: break-all;
+                        -webkit-line-clamp: 3;
+                    }
+                    .refund_address {
+                        display: flex;
+                        .title {
+                            display: block;
+                            width: 70px;
+                        }
+                        .address {
+                            display: inline-block;
+                            width: 427px;
+                            word-break: break-all;
+                        }
+                    }
+                    .refund_voucher {
+                        .refund_voucher_list {
+                            flex-wrap: wrap;
+                            .refund_voucher_pre {
+                                width: 50px;
+                                height: 50px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

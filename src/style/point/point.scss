@@ -1,0 +1,173 @@
+.el-carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.el-carousel__item {
+    .imgCon {
+        width: 1920px;
+        /*图片宽度*/
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+        display: flex;
+        justify-content: center;
+        background: #636551;
+    }
+}
+
+#sld_point_wrap {
+    width: $min-home-width;
+    margin: 0 auto;
+    overflow-x: hidden;
+    .secoCategory {
+        position: relative;
+        display: flex;
+        border: 1px solid #f1f1f1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .cate_title {
+            width: 120px;
+            background: #f8f8f8;
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: #999999;
+            line-height: 60px;
+            text-align: center;
+        }
+        .cate_list {
+            zoom: 1;
+            max-width: 950px;
+            flex-wrap: wrap;
+            .cate_item {
+                font-size: 14px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                line-height: 60px;
+                padding-left: 17px;
+                padding-right: 17px;
+                cursor: pointer;
+                &:hover {
+                    color: var(--color_main);
+                }
+            }
+
+            .zip_block {
+                width: 104px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+
+        .one_line {
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .sld_more {
+            position: relative;
+            right: 0;
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            line-height: 60px;
+            height: 60px;
+            width: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.goods_list_point {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    .goods_container {
+        cursor: pointer;
+        border: 1px solid #eeeeee;
+        border-radius: 2px;
+        width: 282px;
+        margin-bottom: 20px;
+        &:hover {
+            border: 1px solid var(--color_integral_main);
+        }
+        .goods_img {
+            width: 280px;
+            height: 280px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .goods_desc {
+            padding: 20px;
+            height: 184px;
+            position: relative;
+            .goods_name {
+                font-size: 13px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #333333;
+                line-height: 18px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .goods_brief {
+                margin-top: 2px;
+                font-size: 12px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                color: #666666;
+                line-height: 18px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .desc_bottom {
+                position: absolute;
+                bottom: 20px;
+            }
+            .market_price {
+                font-size: 12px;
+                font-family: Microsoft YaHei;
+                font-weight: 400;
+                text-decoration: line-through;
+                color: #999999;
+            }
+            .point_price {
+                display: inline-block;
+                background: var(--color_integral_main);
+                border-radius: 3px;
+                margin-top: 18px;
+                padding: 10px 11px 11px 13px;
+                color: #ffffff;
+                span:first-child {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: bold;
+                    color: #ffffff;
+                }
+                span:nth-child(2) {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .empty_fill {
+        width: 282px;
+    }
+}

@@ -1,0 +1,154 @@
+.sld_my_coupon {
+    width: 1007px;
+    margin-left: 10px;
+    float: left;
+    .my_coupon_con {
+        border: 1px solid #eeeeee;
+        background: #ffffff;
+        .nav_list {
+            background-color: white;
+            .con {
+                border-bottom: 1px solid#EEEEEE;
+                height: 42px;
+
+                .nav_item {
+                    width: 145px;
+                    height: 42px;
+                    line-height: 42px;
+                    text-align: center;
+                    color: #444444;
+                    font-size: 14px;
+                    border: 1px solid #eeeeee;
+                    border-bottom: none;
+                    border-top: none;
+
+                    &:not(:first-child) {
+                        border-left: none;
+                    }
+
+                    &.active {
+                        color: var(--color_coupon_main);
+                        border: none;
+                        border-right: 1px solid #eeeeee;
+                        background: #ffffff;
+                        font-weight: 600;
+                    }
+                    &:hover {
+                        color: var(--color_coupon_main);
+                    }
+                }
+            }
+        }
+
+        .coupon_container {
+            width: 100%;
+            flex-wrap: wrap;
+            .coupon_item {
+                width: 228px;
+                height: 268px;
+                background-size: cover;
+                position: relative;
+                text-align: center;
+                margin: 20px 10px 0px 12px;
+                .coupon_item_header {
+                    width: 229px;
+                    height: 125px;
+                    left: 0;
+                    top: 0;
+                    z-index: 0;
+                    background: var(--color_coupon_main_bg);
+                    border-radius: 6px 6px 0px 0px;
+                    padding-top: 22px;
+                }
+                .coupon_item_header_one {
+                    background: linear-gradient(90deg, rgba(182, 182, 182, 0.65), rgba(182, 182, 182, 1) 100%);
+                }
+                .coupon_item_img {
+                    width: 229px;
+                    height: 147px;
+                    padding: 1px;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    margin-top: -3px;
+                    padding-top: 20px;
+                }
+                .out_logo {
+                    width: 86px;
+                    height: 64px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .price {
+                    position: relative;
+                    color: white;
+                    line-height: 1;
+                    span:nth-child(1) {
+                        font-size: 18px;
+                    }
+
+                    span:nth-child(2) {
+                        font-size: 36px;
+                    }
+
+                    span:nth-child(3) {
+                        font-size: 25px;
+                    }
+                }
+
+                .content {
+                    margin-top: 16px;
+                    font-size: 14px;
+                    color: white;
+                    line-height: 1;
+                    position: relative;
+                }
+
+                .time {
+                    margin-top: 13px;
+                    color: white;
+                    line-height: 1;
+                    position: relative;
+                }
+                .type {
+                    position: relative;
+                    // margin-top: 31px;
+                    color: var(--color_coupon_main);
+                    font-size: 14px;
+                    text-align: left;
+                    padding-left: 14px;
+                    &.used {
+                        color: #878787;
+                    }
+                }
+                .rules {
+                    position: relative;
+                    color: #333333;
+                    width: 205px;
+                    text-align: left;
+                    padding-left: 14px;
+                    height: 30px;
+                    margin-top: 20px;
+                    line-height: 16px;
+                    .title {
+                        color: #999999;
+                    }
+                }
+                .btn {
+                    position: relative;
+                    color: #878787;
+                    .normal {
+                        color: var(--color_coupon_main);
+                    }
+                    position: absolute;
+                    bottom: 17px;
+                    width: 100%;
+                }
+            }
+        }
+        .el-pagination {
+            margin: 20px;
+        }
+    }
+}

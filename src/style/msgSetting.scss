@@ -1,0 +1,87 @@
+//消息接收设置
+.sld_setting {
+    float: left;
+    margin-left: 10px;
+    .sld_setting_title {
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        font-size: 16px;
+        font-weight: bold;
+        border-left: 2px solid var(--color_main);
+        margin: 12px 10px;
+        padding-left: 10px;
+    }
+    .setting_list {
+        width: 1005px;
+        background: #ffffff;
+        border: 1px solid #eeeeee;
+        padding-bottom: 20px;
+        .setting_pre {
+            .list_title {
+                height: 56px;
+                line-height: 55px;
+                border-bottom: 1px solid #eeeeee;
+                padding-left: 30px;
+                color: #333333;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 30px;
+                padding-top: 10px;
+                .list_pre {
+                    margin-bottom: 20px;
+                    margin-right: 80px;
+                    .list_pre_title {
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 32px;
+                    }
+                    .list_pre_option {
+                        width: 120px;
+                        height: 30px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        .receive {
+                            width: 59px;
+                            height: 30px;
+                            line-height: 30px;
+                            text-align: center;
+                            border: 1px solid #cccccc;
+                            -webkit-transition: all 0.3s;
+                            -moz-transition: all 0.3s;
+                            -ms-transition: all 0.3s;
+                            -o-transition: all 0.3s;
+                            transition: all 0.3s;
+                            border-radius: 4px 0 0 4px;
+                            background-color: #ffffff;
+                            display: block;
+                            color: #333333;
+                            &:nth-child(1) {
+                                border-right: none;
+                            }
+                            &:nth-child(2) {
+                                border-left: none;
+                                border-radius: 0 4px 4px 0;
+                            }
+                        }
+                        .no_receive {
+                            background-color: #b9b9b9;
+                            border-color: #b9b9b9;
+                            color: #333333;
+                        }
+                        .active {
+                            background-color: var(--color_main);
+                            border-color: var(--color_main);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

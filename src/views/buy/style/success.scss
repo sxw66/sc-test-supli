@@ -1,0 +1,395 @@
+#success {
+    background-color: #f4f4f4;
+    // background-color: #eff0f1;
+    padding: 10px 0;
+
+    .content-wrap {
+        width: 1000px;
+        background: #fff;
+        margin: auto;
+        padding: 31px 53px;
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        .top_logo {
+            width: 123px;
+            height: 53px;
+            margin-left: -20px;
+            div {
+                width: 123px;
+                height: 53px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        .txt {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+    .img-wrap {
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        .img {
+            width: 57px;
+            display: block;
+            margin: auto;
+        }
+        .txt {
+            white-space: nowrap;
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: bold;
+            color: #000000E6;
+            margin: 29px auto;
+        }
+    }
+    .notice {
+        margin: 59px auto 0;
+        text-align: center;
+        .line1 {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 26px;
+        }
+        .line2 {
+            color: #00000099;
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 6px;
+            .copy {
+                border: none;
+                color: var(--color_main);
+                padding: 0;
+                margin-left: 7px;
+            }
+            .copy:hover {
+                background: unset;
+                // color: brown;
+                font-weight: bold;
+            }
+        }
+    }
+    .action-wrap {
+        margin: 42px auto;
+        width: fit-content;
+        .btn {
+            width: 88px;
+            height: 32px;
+            padding: 0;
+            min-height: 0;
+            border: none;
+            margin: 0;
+        }
+        .backHome {
+          background-color: #E7E7E7FF;  
+        }
+        .reorder {
+            background-color: var(--color_main);
+            color: white;
+            margin-left: 29px;
+        }
+    }
+
+
+    /* ------------ 旧版 ------------ */
+    .top_info {
+        width: 1200px;
+        margin: 0 auto;
+
+        .top_info_header {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            margin-bottom: 40px;
+            .top_logo {
+                width: 135px;
+                height: 98px;
+                div {
+                    width: 135px;
+                    height: 98px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+                img {
+                    width: 135px;
+                    height: 98px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .top_info_text {
+            font-size: 12px;
+            color: #333333;
+            font-weight: 400;
+            height: 20px;
+            line-height: 20px;
+
+            .price span {
+                font-size: 20px;
+                color: var(--color_main);
+                margin: 0 3px;
+            }
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+
+            .show_detail {
+                color: #4690ec;
+            }
+        }
+
+        .receive_info {
+            width: 1200px;
+            margin: 0 auto;
+            border-top: 1px solid #d5d5d5;
+            margin-top: 10px;
+
+            p {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .bg {
+        width: 1467px;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        line-height: 30px;
+        background: url("~@/assets/buy/paybg.png") no-repeat top center #eff0f1;
+        background-size: 1467px 836px;
+        margin-top: 40px;
+
+        .pay_method {
+            background-color: white;
+            width: 1200px;
+            margin: 0 auto;
+            padding-bottom: 80px;
+
+            .balance {
+                font-size: 13px;
+
+                .password {
+                    margin-left: 58px;
+                    margin-top: 25px;
+
+                    .password_input {
+                        width: 240px;
+                    }
+
+                    p {
+                        margin-top: 10px;
+
+                        span,
+                        a {
+                            color: #0e9bec;
+                        }
+
+                        a {
+                            margin-left: 16px;
+                        }
+                    }
+                }
+
+                .iconfont {
+                    font-size: 18px;
+                }
+
+                .big_size {
+                    font-size: 16px;
+                    margin-left: 20px;
+                }
+
+                .avai {
+                    margin-left: 20px;
+                }
+
+                .weight {
+                    color: #666666;
+                    font-weight: 600;
+                }
+
+                .logo {
+                    width: 182px;
+                    height: 50px;
+                    margin-top: 26px;
+                    margin-left: -5px;
+                    margin-bottom: 30px;
+                }
+
+                .balance_info {
+                    padding-left: 58px;
+                    margin-bottom: 30px;
+                    i {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .other_pay_method {
+                .other_pay_item {
+                    width: 165px;
+                    height: 50px;
+                    line-height: 50px;
+                    border: 1px solid #d5d5d5;
+
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+
+                    .iconfont {
+                        font-size: 18px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+                .wechat {
+                    margin-left: 80px;
+                }
+            }
+
+            .no_payMethod {
+                width: 1200px;
+                height: 560px;
+                background: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                img {
+                    width: 163px;
+                    height: 114px;
+                }
+                p {
+                    margin-top: 39px;
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #333333;
+                }
+            }
+
+            .pay {
+                width: 155px;
+                height: 44px;
+                line-height: 44px;
+                font-size: 16px;
+                color: white;
+                margin-top: 55px;
+                outline: none;
+                background-color: var(--color_main);
+                border-radius: 3px;
+                margin-left: 58px;
+                text-align: center;
+            }
+        }
+        .wx_pay_con {
+            .title {
+                color: #3699ff;
+                font-size: 14px;
+                padding: 23px 0 7px 30px;
+            }
+            .left {
+                width: 281px;
+                height: 388px;
+                margin-left: 40px;
+                box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+                img {
+                    width: 230px;
+                    height: 230px;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                }
+                p {
+                    color: #999;
+                    font-size: 16px;
+                    span {
+                        color: var(--color_main);
+                    }
+                }
+                .refresh {
+                    display: inline-block;
+                    width: 52px;
+                    height: 20px;
+                    line-height: 18px;
+                    border: 1px solid #8ec6ff;
+                    color: #8ec6ff;
+                    font-size: 12px;
+                    border-radius: 2px;
+                    background-color: #fff;
+                    margin-top: 15px;
+                    outline: none;
+                    text-align: center;
+                }
+            }
+            .wx_png {
+                width: 427px;
+                height: 429px;
+                margin-right: 40px;
+            }
+        }
+    }
+
+    .iconduihao1 {
+        color: var(--color_main);
+    }
+}
+
+.top_info_progress {
+    width: 600px;
+    .progress_item {
+        p {
+            margin-top: 10px;
+        }
+        .progress {
+            text-align: center;
+            margin-top: 3px;
+            span {
+                position: relative;
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                line-height: 14px;
+                border: 5px solid #d0cdcd;
+                border-radius: 50%;
+                color: #9f9f9f;
+                z-index: 2;
+
+                &.active {
+                    border: 5px solid var(--color_main);
+                    color: var(--color_main);
+                }
+            }
+
+            .progress_line {
+                width: 140px;
+                height: 6px;
+                background-color: #d0cdcd;
+                z-index: 1;
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    &.active {
+                        background-color: var(--color_main);
+                    }
+                    &.current {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

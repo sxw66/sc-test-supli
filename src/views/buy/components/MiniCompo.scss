@@ -1,0 +1,91 @@
+.restrict_message {
+  height: 36px;
+  background: #fdfadb;
+  border: 1px solid #f7eee0;
+  padding-left: 22px;
+  .message {
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    font-size: 14px;
+    color: #b76c1c;
+  }
+}
+
+//商品无货缺货
+.disabled_product_dialog {
+  margin: 0 auto;
+  height: 330px;
+
+  .good_item {
+    font-size: 14px;
+
+    .goods_img_con {
+      width: 80px;
+      height: 80px;
+      background-color: #999;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .good_info {
+      margin-left: 10px;
+    }
+
+    .good_name {
+      width: 320px;
+      color: #333333;
+      line-height: 14px;
+      display: inline-block;
+    }
+
+    .spec_num {
+      margin-top: 26px;
+
+      .good_spec {
+        color: $colorH;
+      }
+
+      .good_num {
+        float: right;
+        color: #333333;
+      }
+    }
+  }
+
+  .btn_con {
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    .return {
+      cursor: pointer;
+      width: 60px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: #333333;
+      border-radius: 3px;
+      border: 1px solid #dddddd;
+    }
+
+    .red {
+      background-color: var(--color_main);
+      color: white;
+    }
+
+    .remove {
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 3px;
+      background-color: var(--color_main);
+      margin-left: 10px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

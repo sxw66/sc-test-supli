@@ -1,0 +1,123 @@
+.clearfix {
+    zoom: 1;
+    display: block;
+}
+
+.fl {
+    float: left;
+}
+
+.member_info_container {
+    padding: 0 0 0 11px;
+    float: left;
+    width: 1007px;
+
+    .breadcrumb {
+        font-family: "MicroSoft yahei";
+        width: 1007px;
+        background-color: #f7f7f7;
+        height: 28px;
+        padding: 0 0 0 11px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        line-height: 28px;
+        vertical-align: baseline;
+    }
+
+    .member_info {
+        border: 1px solid #eee;
+        background-color: #fff;
+
+        .form_item {
+            padding: 37px 0 0 0px;
+            line-height: 30px;
+            margin-bottom: 20px;
+            color: #333;
+            img {
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            #file {
+                display: none;
+                margin-left: 30px;
+                vertical-align: top;
+                margin-top: 22px;
+            }
+            #memberTrueName,
+            #memberName,
+            #memberNickName {
+                height: 27px;
+                width: 302px;
+                line-height: 25px;
+                outline: none;
+                padding-left: 10px;
+                border: 1px solid #dcdcdc;
+            }
+            #year,
+            #month,
+            #day {
+                height: 25px;
+                width: 65px;
+                line-height: 25px;
+                margin-right: 10px;
+            }
+            #birth label {
+                margin-right: 10px;
+            }
+            #birth select {
+                outline: none;
+                border: 1px solid #dcdcdc;
+                cursor: pointer;
+            }
+
+            #sex {
+                input {
+                    margin-left: 6px;
+                    margin-top: 0;
+                    margin-right: 6px;
+                    vertical-align: sub;
+                    outline: none;
+                }
+                .el-radio__label {
+                    display: inline-block;
+                    width: 50px !important;
+                    padding-left: 10px;
+                }
+            }
+            .tag_name {
+                display: block;
+                float: left;
+                width: 110px;
+                line-height: 60px;
+                text-align: right;
+                font-weight: 400;
+                margin-right: 25px;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .memInfo_save {
+            padding-left: 150px;
+            margin-bottom: 50px;
+            margin-top: 35px;
+            button {
+                background-color: var(--color_main);
+                color: #fff;
+                border-color: var(--color_main);
+            }
+        }
+    }
+}
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: var(--color_main);
+    background: var(--color_main_bg);
+}
+.el-radio__input.is-checked + .el-radio__label {
+    color: var(--color_main);
+}

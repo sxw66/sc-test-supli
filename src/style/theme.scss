@@ -1,0 +1,37 @@
+/*
+  样式规范表
+*/
+$min-width: 1200px; //容器安全区域宽度
+$min-home-width: 1210px; //首页容器安全区域宽度
+
+// 常规字体大小设置
+$fontA: 28px; //用于特殊标题文字
+$fontB: 24px; //用于引导性标题，特殊二级标题文字
+$fontC: 18px; //用于一级标题；常规标题文字
+$fontD: 16px; //用于侧导航二级标题，商品列表，商品名称、等
+$fontE: 14px; //用于常规文字，文章内容等
+$fontF: 12px; //用于次要文字，辅助性文字
+
+// 常规配色设置
+$colorMain: #e2231a !default; //主色、文字选中、搜索
+$colorMain2: #f30213 !default; //主色、文字选中、搜索
+$colorSkeleton: #eee; //骨架屏颜色
+$colorTitle1: #333 !default; //标题、一级标题、一级内容
+$colorTitle2: #666 !default; //二级标题、二级内容
+$colorC: #e8f2ff !default; //主色，背景色
+$colorD: #ffa200 !default; //提示消息、鼠标悬停等
+$colorE: #ee1147 !default; //商品价格
+$colorF: #333333 !default; //标题、一级标题颜色
+$colorG: #666666 !default; //二级标题、列表文字
+$colorH: #999999 !default; //文章文字、辅助性文字
+$colorI: #eeeeee !default; //分割线
+$colorJ: #f5f5f5 !default; //弹框标题背景色
+$colorK: #f8f8f8 !default; //辅色，背景色
+
+////element-plus 主题色修改
+//$--color-primary: #ec2116;/* 改变主题色变量 */
+//
+///* 改变 icon 字体路径变量，必需 */
+//$--font-path: '~element-plus/lib/theme-chalk/fonts';
+//
+//@import "~element-plus/packages/theme-chalk/src/index";

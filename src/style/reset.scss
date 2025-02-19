@@ -1,0 +1,33 @@
+body,div,p,h1,h2,h3,h4,h5,h6,ul,li,dl,dt,a,input,button,textarea,select{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html,body{
+  font-family:-apple-system,system-ui,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei;
+  color: #333333;
+  background-color: #ffffff;
+  min-width: 1210px;
+  font-size: 12px;
+}
+a{
+  text-decoration: none;
+}
+ul,li{
+  list-style: none;
+}
+input{
+  font: normal;
+}
+input:focus,a:focus{
+  outline: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, big, cite, code, del, em, font, img, ins, small, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  margin: 0;
+  padding: 0;
+}

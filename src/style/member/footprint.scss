@@ -1,0 +1,147 @@
+.clearfix {
+    zoom: 1;
+    display: block;
+
+    &:before {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+a:link,
+a:visited {
+    color: #333333;
+    text-decoration: none;
+}
+.sld_look_log {
+    float: left;
+    margin-left: 10px;
+    width: 1007px;
+    .log_banner {
+        position: relative;
+    }
+    .log_option {
+        position: absolute;
+        right: 30px;
+        top: 11px;
+        padding: 5px 15px 5px;
+        background-color: #fff;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--color_main);
+            border: 1px solid var(--color_main);
+            color: #fff;
+        }
+    }
+    .breadcrumb span {
+        margin: 0 3px;
+        font-family: "微软雅黑";
+    }
+    .breadcrumb {
+        font-family: "MicroSoft yahei";
+        width: 1007px;
+        background-color: #f7f7f7;
+        height: 28px;
+        padding: 0 0 0 11px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        line-height: 28px;
+        vertical-align: baseline;
+
+        a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        span {
+            margin: 0 3px;
+            font-family: "\5b8b\4f53";
+        }
+    }
+    .sld_footprint {
+        font-family: "微软雅黑";
+        overflow: hidden;
+        padding: 0 17px 0 0;
+        background-color: #fff;
+        border: 1px solid #eeeeee;
+        & > ul {
+            padding-top: 23px;
+            padding-bottom: 150px;
+            margin-top: 0;
+        }
+        .sld_foot_goods {
+            margin-top: 15px;
+            li {
+                float: left;
+                width: 162px;
+                height: 206px;
+                border: 1px solid #e5e5e5;
+                margin: 0 23px 23px 0;
+                .img {
+                    width: 160px;
+                    height: 160px;
+                    border-bottom: 1px solid #e5e5e5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .sld_foot_price {
+                    line-height: 44px;
+                    padding: 0 7px;
+                    .fl {
+                        font-size: 14px;
+                        color: var(--color_price);
+                    }
+                    .fr {
+                        float: right;
+                        font-size: 12px;
+                        color: #333333;
+                        &:hover {
+                            color: var(--color_main);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.el-pager li.active {
+    color: var(--color_main);
+    cursor: default;
+}
+.el-pager li:hover {
+    color: var(--color_main);
+}
+
+.el-button--primary {
+    color: #fff;
+    background-color: var(--color_main);
+    border-color: var(--color_main);
+}
+
+.el-button:hover {
+    background-color: var(--color_main);
+    border-color: var(--color_main);
+    color: #fff;
+}

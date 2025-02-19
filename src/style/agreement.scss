@@ -1,0 +1,60 @@
+.sld_login {
+  .sld_login_header {
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    .content {
+      padding: 15px 0;
+      margin: 0 15px;
+      .l_logo {
+        cursor: pointer;
+        display: flex;
+        margin-right: 70%;
+
+        .img {
+          display: inline-block;
+          vertical-align: top;
+          max-width: 190px;
+          max-height: 43px;
+        }
+
+        .text {
+          font-size: 0;
+          display: inline-block;
+          vertical-align: top;
+          line-height: 48px;
+          margin-left: 5px;
+        }
+      }
+
+      .r_register_wrap {
+        font-size: 14px;
+        .go_register_btn {
+          font-size: 13px;
+          display: inline-block;
+          padding: 6px 22px;
+          background: var(--color_main_bg);
+          color: #fff;
+          border-radius: 30px;
+          margin-left: 7px;
+          font-family: Microsoft YaHei;
+          height: 30px;
+          line-height: 17px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .agreement_container {
+    width: 1200px;
+    margin: auto;
+    // margin-top: 60px;
+    padding: 10px 20px 30px;
+    pre {
+      // margin-top: 40px;
+    }
+    .agreement_title {
+      text-align: center;
+    }
+  }
+}

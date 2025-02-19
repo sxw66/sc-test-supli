@@ -1,0 +1,241 @@
+.sld_order_evaluatist {
+    width: 1007px;
+    margin-left: 10px;
+    float: left;
+    .tips {
+        width: 17px;
+        height: 16px;
+        margin-right: 5px;
+    }
+    .tips_info {
+        margin-left: 20px;
+    }
+    .top_info {
+        height: 180px;
+        background-color: white;
+
+        .left {
+            width: 321px;
+            height: 156px;
+            text-align: center;
+            border-right: 1px solid #eeeeee;
+
+            .evaluating {
+                text-align: center;
+
+                .num {
+                    font-size: 24px;
+                    margin-top: 15px;
+                    display: inline-block;
+                }
+            }
+
+            .text {
+                margin-top: 30px;
+                display: inline-block;
+            }
+        }
+
+        .right {
+            width: 684px;
+            height: 156px;
+            padding: 10px 23px 0 66px;
+
+            .info {
+                p {
+                    font-weight: 600;
+                    line-height: 18px;
+                    margin: 20px 0;
+                }
+
+                div {
+                    margin-top: 10px;
+
+                    .circle {
+                        display: inline-block;
+                        width: 3px;
+                        height: 3px;
+                        background-color: #666666;
+                        vertical-align: middle;
+                        margin-right: 6px;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+
+            .qrcode {
+                text-align: center;
+                .image {
+                    width: 231px;
+                    height: 165px;
+                    margin-top: -20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .title {
+                    font-size: 14px;
+                    color: #666;
+                    margin-top: 10px;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .evaluatilist_con {
+        background-color: #fff;
+        border: 1px solid #eee;
+        margin: 10px 0;
+        min-height: 500px;
+        padding-bottom: 10px;
+        .title {
+            position: relative;
+            height: 55px;
+            padding: 11px 0 0 13px;
+            background-color: #fafafa;
+            border-bottom: 1px solid #d9d9e4;
+            z-index: 1;
+
+            .evaluating {
+                position: relative;
+                float: left;
+                width: 157px;
+                line-height: 48px;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: center;
+                border: 1px solid transparent;
+                border-bottom: none;
+                -webkit-border-radius: 6px 6px 0 0;
+                -moz-border-radius: 6px 6px 0 0;
+                border-radius: 6px 6px 0 0;
+                z-index: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: 0 10px;
+                &.active {
+                    background-color: #fff;
+                    border-color: #d9d9e4;
+                    height: 44px;
+                }
+            }
+        }
+
+        .order_item {
+            width: 965px;
+            margin: 20px auto 10px;
+            border: 1px solid #e8e8f1;
+
+            .order_item_title {
+                width: 100%;
+                height: 30px;
+                background-color: #f7f7f7;
+                text-align: center;
+                color: #666666;
+                font-weight: 400;
+                line-height: 30px;
+
+                .order_sn {
+                    width: 40%;
+                    text-align: left;
+                    padding-left: 10px;
+                    display: inline-block;
+                    span {
+                        margin-left: 20px;
+                        cursor: pointer;
+                        &:hover {
+                            color: var(--color_main);
+                        }
+                    }
+                }
+
+                .price {
+                    flex: 1;
+                }
+
+                .oprate {
+                    width: 23%;
+                }
+            }
+
+            .good_info {
+                width: 100%;
+                align-items: stretch;
+
+                .good_con {
+                    width: 40%;
+                    border-right: 1px solid #e8e8f1;
+
+                    .good_item {
+                        height: 120px;
+
+                        &:not(:first-child) {
+                            border-top: 1px solid #e8e8f1;
+                        }
+
+                        .image {
+                            width: 80px;
+                            height: 80px;
+                            margin-right: 11px;
+                            // border: 1px solid black;
+                            cursor: pointer;
+
+                            img {
+                                max-width: 100%;
+                                max-height: 100%;
+                            }
+                        }
+
+                        .name {
+                            width: 200px;
+                            height: 36px;
+                            line-height: 18px;
+                            align-self: flex-start;
+                            margin-top: 22px;
+                            cursor: pointer;
+                        }
+
+                        .num {
+                            margin-left: 40px;
+                            color: #999999;
+                            align-self: flex-start;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+
+                .price {
+                    flex: 1;
+                    text-align: center;
+                    border-right: 1px solid #e8e8f1;
+                }
+
+                .oprate {
+                    width: 23%;
+                    text-align: center;
+
+                    .detail:hover {
+                        color: var(--color_main);
+                    }
+
+                    .evaluate_btn {
+                        width: 90px;
+                        height: 28px;
+                        line-height: 26px;
+                        color: var(--color_main);
+                        border: 1px solid var(--color_main);
+                        text-align: center;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

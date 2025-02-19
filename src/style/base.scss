@@ -1,0 +1,407 @@
+/**
+* 全局通用样式
+*/
+
+a {
+  &:visited {
+    color: unset;
+  }
+  color: unset;
+}
+
+//一行隐藏
+.overflow_ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+//两行隐藏
+.overflow_ellipsis_two {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_row_center_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_row_center_between {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.flex_row_center_around {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.flex_row_center_start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex_row_center_end {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex_row_between_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_row_between_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.flex_row_between_around {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-around;
+}
+
+.flex_row_between_start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex_row_between_end {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flex_row_around_center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_row_around_between {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-between;
+}
+
+.flex_row_around_around {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.flex_row_around_start {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex_row_around_end {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex_row_start_center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_row_start_between {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+
+.flex_row_start_around {
+  display: flex;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+
+.flex_row_start_start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex_row_start_end {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.flex_row_end_center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex_row_end_between {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-between;
+}
+
+.flex_row_end_around {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-around;
+}
+
+.flex_row_end_start {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex_row_end_end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex_column_center_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_column_center_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.flex_column_center_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.flex_column_center_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.flex_column_center_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex_column_between_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex_column_between_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.flex_column_between_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-around;
+}
+
+.flex_column_between_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex_column_between_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.flex_column_around_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex_column_around_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-between;
+}
+
+.flex_column_around_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.flex_column_around_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex_column_around_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex_column_start_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex_column_start_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+}
+
+.flex_column_start_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-around;
+}
+
+.flex_column_start_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flex_column_start_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.flex_column_end_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex_column_end_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: space-between;
+}
+
+.flex_column_end_around {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: space-around;
+}
+
+.flex_column_end_start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex_column_end_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* 分页的样式 start */
+.sld_pagination .el-pager li.active {
+  color: var(--color_main);
+}
+
+.sld_pagination .el-pager li:hover {
+  color: var(--color_main);
+}
+
+.sld_pagination .el-input__inner:focus {
+  border-color: var(--color_main);
+}
+
+/* 分页的样式 end */
+
+// 悬浮鼠标变手
+.pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.el-pagination {
+  text-align: center;
+}
+
+/* 全局空图 start */
+.sld_common_empty {
+  margin: 0 auto !important;
+
+  .empty_img {
+    width: 190px;
+    margin-bottom: 15px;
+  }
+}
+
+/* 全局空图 end */

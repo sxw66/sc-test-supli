@@ -1,0 +1,706 @@
+.sld_cart_index {
+    width: 100%;
+    height: 100%;
+    .cart_content {
+        width: 1200px;
+        margin: 23px auto;
+        .cart_title {
+            width: 1200px;
+            height: 38px;
+            background: #f3f3f3;
+            padding: 0 75px 0 20px;
+            border-radius: 2px;
+            overflow: hidden;
+            box-sizing: border-box;
+            .cart_title_pre {
+                &:nth-child(2) {
+                    margin: 0 181px;
+                }
+                &:nth-child(3) {
+                    width: 180px;
+                    text-align: center;
+                    margin-left: 90px;
+                }
+                &:nth-child(4) {
+                    margin: 0 38px 0 72px;
+                }
+                &:nth-child(5) {
+                    width: 180px;
+                    text-align: center;
+                }
+                img {
+                    width: 14px;
+                    height: 14px;
+                    cursor: pointer;
+                }
+                span {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: bold;
+                    color: #333333;
+                    text {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        .cart_lists {
+            margin-bottom: 20px;
+            .cart_lists_pre {
+                padding-top: 21px;
+                .store_info {
+                    margin-bottom: 6px;
+                    padding-left: 21px;
+                    width: 1200px;
+                    box-sizing: border-box;
+                    position: relative;
+                    .store_sel {
+                        width: 14px;
+                        height: 14px;
+                        margin-right: 20px;
+                        cursor: pointer;
+                    }
+                    .store_des {
+                        span {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: bold;
+                            color: #434343;
+                        }
+                        img {
+                            width: 6px;
+                            height: 10px;
+                            margin-left: 10px;
+                        }
+                    }
+                    .store_kefu {
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                    .store_coupons {
+                        position: absolute;
+                        width: 70px;
+                        height: 24px;
+                        left: 340px;
+                        margin-bottom: 4px;
+                        cursor: pointer;
+
+                        .store_coupons_bg {
+                            width: 68px;
+                            height: 27px;
+                            position: relative;
+                            .coupons_bga {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                font-size: 24px;
+                                color: var(--color_main);
+                            }
+                            .cp_name {
+                                position: absolute;
+                                color: #fff;
+                                left: 10px;
+                                transform: translateY(-50%);
+                                top: 53%;
+                                width: 60%;
+                                border-left: 1px dashed rgba(255, 255, 255, 0.5);
+                                border-right: 1px dashed rgba(255, 255, 255, 0.5);
+                                text-align: center;
+                            }
+                            em {
+                                position: absolute;
+                                right: 8px;
+                                top: 7px;
+                                font-style: normal;
+                                font-weight: bold;
+                                color: var(--color_main);
+                                transform: rotate(90deg) scale(0.6, 1.2);
+                                transform-origin: center;
+                            }
+                            .coupons_jian {
+                                position: absolute;
+                                right: 6px;
+                                font-size: 12px;
+                                transform: scale(0.7);
+                                color: var(--color_main);
+                                top: 7px;
+                            }
+                            opacity: 0.7;
+                        }
+
+                        .store_coupons_close {
+                            width: 100%;
+                            margin-top: 10px;
+                            padding-right: 2px;
+                            img {
+                                position: relative;
+                                top: 4px;
+                                width: 12px;
+                                height: 11px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        &.active {
+                            em {
+                                transform: rotate(270deg) scale(0.6, 1.2);
+                                transform-origin: center;
+                                top: 6px;
+                            }
+                        }
+
+                        .store_coupons_list {
+                            position: absolute;
+                            top: 38px;
+                            left: -29px;
+                            z-index: 99;
+                            width: 320px;
+                            padding: 0 10px;
+                            background: #ffffff;
+                            border: 1px solid var(--color_main);
+                            cursor: default;
+
+                            .rotate_circle {
+                                width: 9px;
+                                height: 9px;
+                                border: 1px solid var(--color_main);
+                                border-right: none;
+                                border-bottom: none;
+                                transform: rotate(45deg);
+                                position: absolute;
+                                top: -5px;
+                                left: 53px;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                    .get_coupons_btn {
+                        margin-left: 20px;
+                        width: 100px;
+                        height: 20px;
+                        border: 1px solid var(--color_main);
+                        span {
+                            font-size: 12px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: var(--color_main);
+                        }
+                        img {
+                            width: 5px;
+                            height: 9px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .goods_con {
+                    width: 1200px;
+                    background: #ffffff;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    &:nth-last-of-type(1) {
+                        margin-bottom: 0;
+                    }
+                    .full_reduc_activity {
+                        width: 1200px;
+                        height: 40px;
+                        background-color: #f6f6f6;
+                        border-bottom: 1px solid #dedede;
+                        padding-left: 20px;
+                        .full_reduc_title {
+                            width: 46px;
+                            height: 24px;
+                            background: var(--color_main_bg);
+                            border-radius: 3px;
+                            font-size: 12px;
+                            font-family: Microsoft YaHei;
+                            font-weight: bold;
+                            color: #ffffff;
+                            text-align: center;
+                            line-height: 24px;
+                            border-radius: 11px;
+                        }
+                        .full_reduc_des {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #333333;
+                            margin: 0 16px;
+                        }
+                        .go_collect_bill {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #1a86ff;
+                        }
+                    }
+                    .goods_list {
+                    }
+                }
+            }
+            // 失效商品 start
+            .invalid_goods {
+                .invalid_goods_title {
+                    font-size: 18px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #333333;
+                    margin-top: 30px;
+                    margin-bottom: 14px;
+                    padding-left: 20px;
+                    span:nth-child(2) {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #005ea7;
+                        cursor: pointer;
+                        margin-left: 45px;
+                    }
+                }
+                .invalid_goods_list {
+                    width: 1200px;
+                    background: #f0f0f0;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    // border: 1px solid #dfdfdf;
+                    .invalid_goods_pre {
+                        border-bottom: 1px solid #dddddd;
+                        padding: 20px 0 20px 11px;
+                        &:nth-last-child(1) {
+                            border-bottom: none;
+                        }
+                        .invalid_tips {
+                            width: 34px;
+                            height: 24px;
+                            background: #dddddd;
+                            border-radius: 3px;
+                            font-size: 12px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #333333;
+                            display: block;
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                        .invalid_img {
+                            width: 100px;
+                            height: 100px;
+                            opacity: 0.6;
+                            margin: 0 19px 0 10px;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        .invalid_des {
+                            margin-right: 38px;
+                            .invalid_name {
+                                width: 283px;
+                                font-size: 14px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #999999;
+                                line-height: 18px;
+                                text-overflow: -o-ellipsis-lastline;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 2;
+                                line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                            }
+                            .invalid_spec {
+                                width: 283px;
+                                margin-top: 21px;
+                                font-size: 14px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                color: #999999;
+                            }
+                        }
+                        .invalid_price {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #999999;
+                            width: 100px;
+                            text-align: center;
+                            margin-left: 38px;
+                        }
+                        .invalid_num {
+                            width: 180px;
+                            margin-left: 90px;
+                            .invalid_edit_num {
+                                width: 99px;
+                                background: #ffffff;
+                                border: 1px solid #eeeeee;
+                                span {
+                                    width: 30px;
+                                    height: 30px;
+                                    background: #fafafa;
+                                    text-align: center;
+                                    line-height: 30px;
+                                    display: block;
+                                    cursor: pointer;
+                                }
+                                input {
+                                    width: 39px;
+                                    height: 30px;
+                                    text-align: center;
+                                    line-height: 30px;
+                                    border: none;
+                                    display: block;
+                                    border-left: 1px solid #eeeeee;
+                                    border-right: 1px solid #eeeeee;
+                                }
+                                /*** 消除input元素 type="number" 时默认的 加减按钮*/
+                                input[type="number"]::-webkit-inner-spin-button,
+                                input[type="number"]::-webkit-outer-spin-button {
+                                    -webkit-appearance: none;
+                                    margin: 0;
+                                }
+                                /*** 消除input元素 type="number" 时默认的 加减按钮---moz版*/
+                                input[type="number"] {
+                                    -moz-appearance: textfield;
+                                }
+                            }
+                            .invalid_off {
+                                font-size: 12px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #666666;
+                                margin-top: 11px;
+                            }
+                        }
+                        .invalid_subtotal {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #999999;
+                            width: 180px;
+                            text-align: center;
+                        }
+                        .invalid_btn {
+                            margin-left: 3px;
+                            .invalid_collect,
+                            .invalid_del {
+                                font-size: 14px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #666666;
+                                cursor: pointer;
+                            }
+                            .invalid_collect:hover,
+                            .invalid_del:hover {
+                                color: var(--color_main);
+                            }
+                            .invalid_collect {
+                                margin-bottom: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            // 失效商品 end
+        }
+        .options_btn {
+            width: 1200px;
+            height: 72px;
+            background: #f6f6f6;
+            padding-left: 20px;
+            margin: 0 auto;
+            .options_btn_left {
+                .options_sel {
+                    img {
+                        width: 14px;
+                        height: 14px;
+                        cursor: pointer;
+                    }
+                    .sel_text {
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 400;
+                        color: #333333;
+                        margin-left: 14px;
+                    }
+                }
+                .del_all,
+                .del_all_invalid {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #666666;
+                    line-height: 74px;
+                    margin-left: 21px;
+                }
+                .del_all:hover,
+                .del_all_invalid:hover {
+                    color: var(--color_main);
+                }
+            }
+            .options_right {
+                .options_sel_num {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #333333;
+                    span {
+                        color: var(--color_main);
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-left: 4px;
+                        margin-right: 4px;
+                    }
+                }
+                .options_line {
+                    width: 55px;
+                }
+                .options_sel_price {
+                    .options_all_count {
+                        span:nth-child(1) {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #333333;
+                        }
+                        span:nth-child(2) {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #333333;
+                            margin-top: 14px;
+                        }
+                    }
+                    .options_promotion {
+                        // margin-left: 30px;
+                        span:nth-child(1) {
+                            font-size: 18px;
+                            font-family: Microsoft YaHei;
+                            font-weight: bold;
+                            color: var(--color_price);
+                        }
+                        span:nth-child(2) {
+                            font-size: 16px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: var(--color_price);
+                            margin-top: 14px;
+                        }
+                    }
+                }
+                .go_buy {
+                    width: 160px;
+                    height: 72px;
+                    background: #666666;
+                    font-size: 26px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 72px;
+                    text-align: center;
+                    margin-left: 31px;
+                    &.active {
+                        background: var(--color_main_bg);
+                    }
+                }
+            }
+        }
+    }
+    .cart_content_no {
+        margin: 161px auto;
+        img {
+            width: 190px;
+            height: 140px;
+        }
+        p {
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: #333333;
+            line-height: 39px;
+            text-align: center;
+        }
+        span {
+            width: 115px;
+            height: 30px;
+            background: var(--color_main);
+            border-radius: 3px;
+            display: block;
+            font-size: 14px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+    .cursor_pointer {
+        cursor: pointer;
+    }
+    // 优惠券弹框 start
+    .coupon_model {
+        .model_coupon_list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sld_coupon_item {
+            margin-right: 10px !important;
+        }
+        .sld_coupon_item:nth-child(2n) {
+            margin-right: 0 !important;
+        }
+    }
+    // 优惠券弹框 end
+
+    // 底部操作按钮悬浮框 start
+    .bottom_options {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 -1px 8px rgba(0, 1, 1, 0.08);
+        z-index: 100;
+        .bottom_options_con {
+            width: 1200px;
+            height: 72px;
+            padding-left: 20px;
+            margin: 0 auto;
+            .options_btn_left {
+                .options_sel {
+                    img {
+                        width: 14px;
+                        height: 14px;
+                        cursor: pointer;
+                    }
+                    span {
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 400;
+                        color: #333333;
+                        margin-left: 14px;
+                    }
+                }
+                .del_all,
+                .del_all_invalid {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #666666;
+                    line-height: 74px;
+                    margin-left: 21px;
+                }
+                .del_all:hover,
+                .del_all_invalid:hover {
+                    color: var(--color_main);
+                }
+            }
+            .options_right {
+                .options_sel_num {
+                    font-size: 14px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #333333;
+                    span {
+                        color: var(--color_main);
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-left: 4px;
+                        margin-right: 4px;
+                    }
+                }
+                .options_line {
+                    width: 55px;
+                }
+                .options_sel_price {
+                    .options_all_count {
+                        span:nth-child(1) {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #333333;
+                        }
+                        span:nth-child(2) {
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #333333;
+                            margin-top: 14px;
+                        }
+                    }
+                    .options_promotion {
+                        // margin-left: 30px;
+                        span:nth-child(1) {
+                            font-size: 18px;
+                            font-family: Microsoft YaHei;
+                            font-weight: bold;
+                            color: var(--color_main);
+                        }
+                        span:nth-child(2) {
+                            font-size: 16px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: var(--color_main);
+                            margin-top: 14px;
+                        }
+                    }
+                }
+                .go_buy {
+                    width: 160px;
+                    height: 72px;
+                    background: #666666;
+                    font-size: 26px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 400;
+                    color: #ffffff;
+                    line-height: 72px;
+                    text-align: center;
+                    margin-left: 31px;
+                    &.active {
+                        background: var(--color_main_bg);
+                    }
+                }
+            }
+        }
+    }
+    // 底部操作按钮悬浮框 end
+
+    // 公共样式
+    // 底部操作按钮 start
+
+    // 底部操作按钮 end
+    .el-button--primary {
+        color: #fff;
+        background-color: var(--color_main);
+        border-color: var(--color_main);
+    }
+    .el-button--primary:focus,
+    .el-button--primary:hover {
+        background: var(--color_main_bg);
+        border-color: var(--color_main);
+        color: #fff;
+    }
+    .el-button:focus,
+    .el-button:hover {
+        background: var(--color_main_bg);
+        border-color: var(--color_main);
+        color: #fff;
+    }
+    
+}
+// .el-button--primary {
+//     color: #fff;
+//     background-color: var(--color_main);
+//     border-color: var(--color_main);
+// }
+// .el-button--primary:focus,
+// .el-button--primary:hover {
+//     background: var(--color_main_bg);
+//     border-color: var(--color_main);
+//     color: #fff;
+// }
+// .el-button:focus,
+// .el-button:hover {
+//     background: var(--color_main_bg);
+//     border-color: var(--color_main);
+//     color: #fff;
+// }

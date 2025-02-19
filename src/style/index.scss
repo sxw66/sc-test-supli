@@ -1,0 +1,7 @@
+@import "./base.scss";
+.bottom_line {
+  width: 100%;
+  height: 1px;
+  background: var(--color_main_bg);
+  margin-top: -2px;
+}

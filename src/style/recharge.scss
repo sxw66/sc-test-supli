@@ -1,0 +1,260 @@
+.sld_recharge {
+    width: 1020px;
+    float: left;
+    margin-left: 10px;
+    .sld_recharge_con {
+        background: #fff;
+        min-height: 544px;
+        .top_info {
+            height: 79px;
+            margin: 0 41px;
+            .progress {
+                height: 79px;
+                border-bottom: 1px solid #eeeeee;
+                .step {
+                    text-align: center;
+                    line-height: 28px;
+                    background-size: 100% 100%;
+                    color: white;
+                    font-size: 14px;
+                    margin-right: 20px;
+                    &:nth-last-of-type(1) {
+                        margin-right: 0;
+                    }
+                    .line {
+                        width: 70px;
+                        height: 1px;
+                        background: #51b953;
+                        display: inline-block;
+                    }
+                    .no_line {
+                        width: 100px;
+                        height: 1px;
+                        display: inline-block;
+                        background: #eeeeee;
+                    }
+                    .sel_line {
+                        background: #51b953;
+                    }
+                    i {
+                        font-size: 16px;
+                        color: #33ad36;
+                        margin: 0 10px 0 20px;
+                    }
+                    .no_sel {
+                        color: #e2e2e2;
+                    }
+                    .no_step_text {
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 400;
+                        color: #999999;
+                    }
+                    .step_text {
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 400;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+
+        .step_con {
+            border-radius: 2px;
+            margin: 31px 41px 120px;
+
+            .title {
+                width: 100%;
+                font-size: 14px;
+                color: #333333;
+                font-weight: bold;
+            }
+
+            .account {
+                font-size: 14px;
+                color: #555555;
+                margin-top: 40px;
+            }
+
+            .input_con {
+                margin-top: 16px;
+                font-size: 14px;
+                color: #555555;
+                .input_span {
+                    white-space: nowrap;
+                }
+                .input {
+                    width: 145px;
+                    margin-right: 10px;
+                }
+
+                .input_con_right {
+                    position: relative;
+                    width: 1000px;
+
+                    .info_text {
+                        position: absolute;
+                        bottom: -25px;
+                        color: #999;
+                        font-size: 12px;
+                    }
+
+                    .next_btn {
+                        display: block;
+                        width: 150px;
+                        height: 40px;
+                        color: #fff;
+                        background: var(--color_main_bg);
+                        font-size: 18px;
+                        border-radius: 2px;
+                        text-align: center;
+                        line-height: 40px;
+                        position: absolute;
+                        bottom: -95px;
+                    }
+                }
+            }
+
+            .tips {
+                width: 938px;
+                border: 2px solid #e8d89d;
+                background: #fffdee;
+                padding: 15px 40px;
+                color: #555555;
+                margin-top: 140px;
+                margin-bottom: 40px;
+
+                p {
+                    line-height: 20px;
+                }
+
+                p:nth-child(1) {
+                    font-weight: 600;
+                    font-size: 12px;
+                }
+            }
+
+            .select_method {
+                .method {
+                    color: #333333;
+                    font-size: 14px;
+                }
+
+                .item {
+                    width: 170px;
+                    height: 60px;
+                    border: 1px solid #dcdcdc;
+                    margin: 0 20px;
+
+                    .iconfont {
+                        font-size: 18px;
+                    }
+
+                    .iconduihao1 {
+                        color: var(--color_main);
+                    }
+
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .pay_btn {
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                color: #fff;
+                background-color: var(--color_main);
+                border-radius: 2px;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                margin: 120px 0px 120px 142px;
+            }
+            .wx_pay_con {
+                .wx_pay_info {
+                    margin: 44px 36px 0 0;
+                    color: #666666;
+                    .pay_type {
+                        font-size: 20px;
+                        margin-right: 20px;
+                    }
+                    .red {
+                        color: var(--color_main);
+                    }
+                }
+                .qrcode_con {
+                    margin: 53px 0 50px 170px;
+                    padding-bottom: 47px;
+                    .left {
+                        .qrcode_image {
+                            width: 145px;
+                            height: 145px;
+                            background-image: url(../../../assets/member/code_bg.png);
+                            img {
+                                width: 120px;
+                                height: 120px;
+                                border: 1px solid #dcdcdc;
+                            }
+                        }
+                        .qrcode_image_tips {
+                            width: 221px;
+                            height: 40px;
+                            background: var(--color_main);
+                            border-radius: 2px;
+                            margin-top: 29px;
+                            i {
+                                font-size: 24px;
+                                color: #fff;
+                            }
+                            span {
+                                font-size: 14px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #ffffff;
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    .right_tip {
+                        width: 219px;
+                        height: 237px;
+                        margin-left: 100px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .reching_tip {
+            width: 100%;
+            font-size: 14px;
+            color: #333;
+            margin-left: 41px;
+            span:nth-child(1) {
+                margin: 40px 0 48px 0;
+                font-weight: bold;
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.el-input.is-active .el-input__inner,
+.el-input__inner:focus {
+    border-color: var(--color_main);
+    outline: 0;
+}

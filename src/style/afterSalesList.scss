@@ -1,0 +1,146 @@
+// 售后列表
+.sld_after_sales_list {
+    width: 1007px;
+    float: left;
+    .after_sales_list_main {
+        background-color: #fff;
+        border: 1px solid #eee;
+        margin-left: 10px;
+        .after_sales_title {
+            margin-bottom: 20px;
+            height: 50px;
+            border-bottom: 1px solid #e8e8f1;
+            .after_sales_title_pre {
+                width: 196px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid #eeeeee;
+                border-top: none;
+                background-color: #fff;
+                color: #333333;
+                font-size: 14px;
+                &:hover {
+                    color: var(--color_main);
+                }
+                &.active_title {
+                    border: none;
+                    color: var(--color_main);
+                    font-weight: 600;
+                }
+                &:nth-last-of-type(1) {
+                    &.active_title {
+                        border-right: 1px solid #eeeeee;
+                    }
+                }
+            }
+        }
+        .after_sales_list {
+            .after_sales_list_title {
+                height: 32px;
+                background-color: #f4f4f9;
+                margin: 0 15px;
+                .title_goods_des {
+                    width: 375px;
+                    text-align: center;
+                }
+                .title_apply_time,
+                .title_apply_type,
+                .title_status,
+                .title_options {
+                    width: 150px;
+                    text-align: center;
+                }
+            }
+            .after_sales_list_con {
+                margin-top: 20px;
+                .list_con_pre {
+                    border: 1px solid #e8e8f1;
+                    margin: 20px 15px 0;
+                    .list_con_pre_title {
+                        padding-left: 20px;
+                        color: #1c1c1c;
+                        height: 30px;
+                        background-color: #f4f4f9;
+                        p:nth-child(2) {
+                            margin: 0 20px;
+                        }
+                    }
+                    .list_con {
+                        .list_pre {
+                            .list_goods_des {
+                                width: 375px;
+                                height: 140px;
+                                padding-left: 20px;
+                                box-sizing: border-box;
+                                .list_goods_img {
+                                    border: 1px solid #efeff3;
+                                    margin-right: 8px;
+                                    width: 80px;
+                                    height: 80px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    background-position: center;
+                                }
+                                .goods_des {
+                                    margin-right: 10px;
+                                    p {
+                                        width: 200px;
+                                        line-height: 20px;
+                                        color: #898989;
+                                        height: 36px;
+                                        line-height: 18px;
+                                        margin-bottom: 5px;
+                                        overflow: hidden;
+                                        word-break: break-all;
+                                        text-overflow: ellipsis;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                    }
+                                }
+                            }
+                            .list_apply_time,
+                            .list_apply_type,
+                            .list_status {
+                                width: 150px;
+                                height: 140px;
+                                text-align: center;
+                            }
+                            .list_options {
+                                width: 150px;
+                                span {
+                                    display: block;
+                                    width: 88px;
+                                    height: 34px;
+                                    line-height: 32px;
+                                    text-align: center;
+                                    color: #333333;
+                                    border: 1px solid #e8e8f1;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 公共样式
+    .borderRight {
+        border-right: 1px solid #e8e8f1;
+    }
+    .cursor_pointer {
+        cursor: pointer;
+    }
+    .sld_page_bottom {
+        margin: 20px;
+    }
+}
+.el-pager li.active {
+    color: var(--color_main);
+    cursor: default;
+}
+.el-pager li:hover {
+    color: var(--color_main);
+}
