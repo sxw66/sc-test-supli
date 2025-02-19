@@ -84,14 +84,6 @@ export default {
 				{ required: true, message: L["请输入收货人"], trigger: "change" },
 				{ min: 2, max: 25, message: L["请输入2~25个字符"], trigger: "change" }
 			],
-			// receiverMobile: [
-			// 	{ required: true, message: L["请输入手机号"], trigger: "change" },
-			// 	{
-			// 		pattern: /^((\+?86)|(\(\+86\)))?(1[3-9]\d{9}$)|(\d{4}-)\d{6,8}$/,
-			// 		message: L["请输入正确的电话号码"],
-			// 		trigger: "change"
-			// 	}
-			// ],
 			area: [{ required: true, message: L["请选择所在地区"], trigger: "change" }],
 			detailAddress: [
 				{ required: true, message: L["请输入详细地址"], trigger: "change" },

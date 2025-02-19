@@ -9,7 +9,7 @@
 <template>
 	<div class="sld_coupon_center">
 		<div class="imgCon2">
-			<img class="top_bg" :src="top_bg" alt />
+			<img class="top_bg" src="@/assets/coupon/top_bg.png" alt />
 		</div>
 		<div class="nav_list flex_row_start_center">
 			<el-scrollbar>
@@ -52,8 +52,6 @@ export default {
 	setup () {
 		const { proxy } = getCurrentInstance()
 		const L = proxy.$getCurLanguage()
-		const item_bg = require('../../assets/coupon/item_bg.png')
-		const top_bg = require('../../assets/coupon/top_bg.png')
 		const coupon_list = reactive({ data: [] })
 		const category_id = ref('')
 		const current_index = ref(0)
@@ -139,8 +137,6 @@ export default {
 		})
 		return {
 			L,
-			item_bg,
-			top_bg,
 			coupon_list,
 			current_index,
 			changeCate,

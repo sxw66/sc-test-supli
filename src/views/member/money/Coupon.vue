@@ -25,8 +25,8 @@
       </div>
       <div class="coupon_container flex_row_start_center">
         <div class="coupon_item" v-for="(couponItem, index) in coupon_list.data" :key="index">
-          <img v-if="couponItem.useState == 2" class="out_logo" :src="have_used_logo" alt="" />
-          <img v-if="couponItem.useState == 3" class="out_logo" :src="have_out_time" alt="" />
+          <img v-if="couponItem.useState == 2" class="out_logo" src="@/assets/coupon/have_used_logo.png" alt="" />
+          <img v-if="couponItem.useState == 3" class="out_logo" src="@/assets/coupon/have_out_time.png" alt="" />
           <div class="coupon_item_header" :class="{ coupon_item_header_one: couponItem.useState != 1 }">
             <div v-if="couponItem.couponType == 1" class="price">
               <span>{{ L['R$'] }} </span>
@@ -56,7 +56,7 @@
               {{ couponItem.effectiveStart }}-{{ couponItem.effectiveEnd }}
             </div>
           </div>
-          <div :style="`background-image:url(${coupon_footer_bg})`" class="coupon_item_img">
+          <div :style="`background-image:url(@/assets/coupon/coupon_footer_bg.png)`" class="coupon_item_img">
             <div :class="{ type: true, used: couponItem.useState != 1 }">
               {{ couponItem.couponTypeValue }}
             </div>
@@ -83,12 +83,10 @@
 
 <script>
 import { ElMessage } from 'element-plus'
-import { getCurrentInstance, ref, onMounted, reactive, computed } from 'vue'
+import { getCurrentInstance, ref, onMounted, reactive } from 'vue'
 import { useRouter } from 'vue-router'
-import { useStore } from 'vuex'
 import MemberTitle from '../../../components/MemberTitle'
 import SldCommonEmpty from '../../../components/SldCommonEmpty'
-
 export default {
   name: 'Coupon',
   components: {
@@ -98,16 +96,9 @@ export default {
   setup () {
     const { proxy } = getCurrentInstance()
     const L = proxy.$getCurLanguage()
-
-    
     const use_state = ref(1)
     const router = useRouter()
     const coupon_list = reactive({ data: [] })
-    const coupon_bg = require('../../../assets/coupon/coupon_bg.png')
-    const have_used_bg = require('../../../assets/coupon/have_used_bg.png')
-    const have_used_logo = require('../../../assets/coupon/have_used_logo.png')
-    const have_out_time = require('../../../assets/coupon/have_out_time.png')
-    const coupon_footer_bg = require("../../../assets/coupon/coupon_footer_bg.png");
     const pageData = reactive({
       current: 1,
       pageSize: 8,
@@ -182,9 +173,6 @@ export default {
     })
     return {
       L,
-      coupon_bg,
-      have_used_bg,
-      have_used_logo,
       pageData,
       coupon_list,
       handlePrevCilickChange,
@@ -192,9 +180,7 @@ export default {
       handleCurrentChange,
       changeState,
       use_state,
-      have_out_time,
       goGoodsList,
-      coupon_footer_bg,
     }
   }
 }

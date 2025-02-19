@@ -9,11 +9,6 @@
 <template>
   <div class="nav_cat">
     <div class="header">
-      <!-- <div class="product_sort" :class="{ show_category: cate_sort_visible }" @click="toGoodsList">
-        <img :src="sortUrl" alt />
-        <span class="sort">{{ L['全部商品分类'] }}</span>
-        <CategorySort />
-      </div> -->
       <NavHoverList :isHoverVisible="cate_sort_visible"/>
       <nav>
         <li v-if="showIndex"><a href="/">{{ L['首页'] }}</a></li>
@@ -44,7 +39,6 @@ export default {
     const navList = reactive({ data: [] });
     const { proxy } = getCurrentInstance();
     const L = proxy.$getCurLanguage();
-    const sortUrl = require("@/assets/header/sort.png");
     const cate_sort_visible = ref(false)
     const toGoodsList = () => {
       router.push("/goods/Category"); //push商品分类路由
@@ -73,7 +67,7 @@ export default {
       getNavData();
     })
 
-    return { navList, sortUrl, toGoodsList, navClick, showIndex, L, cate_sort_visible };
+    return { navList, toGoodsList, navClick, showIndex, L, cate_sort_visible };
   }
 };
 </script>

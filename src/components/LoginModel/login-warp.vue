@@ -172,7 +172,7 @@ export default {
       phonePassword: '',
       emailPassword: '',
       loginType: '',
-      verifyCode: ''
+      verifyCode: '' // 图形验证码
     });
     const rules = reactive({
       phone: [

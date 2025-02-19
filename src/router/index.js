@@ -247,16 +247,16 @@ const routes = [{
 		},
 	]
 },
-{
-	path: '/login',
-	name: 'login',//用户登录页面
-	component: () => import(/* webpackChunkName: "home" */ '../views/member/login/Index'),
-},
-{
-	path: '/register',
-	name: 'register',//用户注册页面
-	component: () => import(/* webpackChunkName: "home" */ '../views/member/login/Register'),
-},
+// {
+// 	path: '/login',
+// 	name: 'login',//用户登录页面
+// 	component: () => import(/* webpackChunkName: "home" */ '../views/member/login/Index'),
+// },
+// {
+// 	path: '/register',
+// 	name: 'register',//用户注册页面
+// 	component: () => import(/* webpackChunkName: "home" */ '../views/member/login/Register'),
+// },
 {
 	path: '/pwd/forget',
 	name: 'ForgetPassword',//用户找回密码页面

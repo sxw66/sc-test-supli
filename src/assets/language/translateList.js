@@ -959,6 +959,12 @@
     '最近更新日期',
     '请输入有效的手机号',
     '请勾选同意用户协议和隐私政策',
+    '通过邮箱找回',
+    '通过手机找回',
+    '验证码',
+    '邮箱验证码',
+    '新密码',
+    '确认密码',
 ];
 
-module.exports = translate_list
+export default translate_list

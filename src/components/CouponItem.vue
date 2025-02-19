@@ -132,8 +132,8 @@ import {
   ElProgress,
   ElMessage
 } from "element-plus";
-import { getCurrentInstance, reactive, watch, ref, computed } from "vue";
-import { useStore } from 'vuex';
+import { getCurrentInstance, reactive, watch, ref } from "vue";
+import item_bg from '../assets/coupon/item_bg.png';
 
 export default {
   name: "CouponItem",
@@ -146,9 +146,6 @@ export default {
     const L = proxy.$getCurLanguage();
     const couponItem = reactive({ data: props.coupon_item });
     const couponType = ref(props.coupon_type);
-    const item_bg = require("../assets/coupon/item_bg.png");
-    const coupon_list_bg = require('../assets/cart_coupons_list.png');
-    
     //领取优惠卷
     const receive = couponId => {
 
@@ -182,7 +179,6 @@ export default {
       couponItem,
       couponType,
       refreshInfo,
-      coupon_list_bg,
     };
   }
 };

@@ -110,11 +110,7 @@ export default {
     const cartData = reactive({ data: {} }); //获取vux的store中的进货单数据
     const logoUrl = "";
     const configInfo = ref(store.state.configInfo)
-    // const defaultImg = ref('this.src="' + require('../assets/common_top_logo.png') + '"')
     const keyword = ref(route.query.keyword);
-    // const searchUrl = require("../assets/header/magnify.png");
-    // const cartUrl = require("../assets/header/cart.png");
-    // const picture = require("../assets/picture.png");
     const goods_name = "";
     const searchBarFixed = ref(false);
     const hotList = reactive({ data: [] }); //热门搜索词列表

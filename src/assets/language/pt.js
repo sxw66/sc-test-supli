@@ -1011,5 +1011,11 @@ export const lang_pt = {
     '最近更新日期': 'Data de Última Atualização',
     '请输入有效的手机号': 'Por favor, insira um número de telefone válido',
     '请勾选同意用户协议和隐私政策': 'Por favor, marque para concordar com o Contrato de Usuário e Política de Privacidade',
+    '通过邮箱找回': 'Recuperar via e-mail',
+    '通过手机找回': 'Recuperar via telefone',
+    '验证码': 'Código de verificação',
+    '邮箱验证码': 'Código de verificação de e-mail',
+    '新密码': 'Nova senha',
+    '确认密码': 'Confirmar senha',
 };
 

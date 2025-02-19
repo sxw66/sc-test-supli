@@ -1011,4 +1011,10 @@ export const lang_en = {
     '最近更新日期': 'Last Updated Date',
     '请输入有效的手机号': 'Please enter a valid phone number',
     '请勾选同意用户协议和隐私政策': 'Please check to agree to the User Agreement and Privacy Policy',
+    '通过邮箱找回': 'Retrieve via email',
+    '通过手机找回': 'Retrieve via phone',
+    '验证码': 'Verification code',
+    '邮箱验证码': 'Email verification code',
+    '新密码': 'New password',
+    '确认密码': 'Confirm password'
 };
