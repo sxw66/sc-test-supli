@@ -1,5 +1,3 @@
-# 北京商联达科技有限公司
-
 ## Project setup
 ```
 npm install
